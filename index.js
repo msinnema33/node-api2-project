@@ -1,0 +1,14 @@
+const express = require('express');
+
+// const hubsRouter = require('./hubs/hubs-reouter');
+
+const server = express();
+
+server.use(express.json());
+
+// 
+
+const PORT = 5000;
+server.listen(PORT, () => {
+    console.log(`\n**** Server running on http://localhost:${PORT} ****\n`);
+});
